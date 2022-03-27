@@ -19,5 +19,6 @@ rich
 dnspython
 yt-dlp==2021.11.10.1
 tgcrypto
+pyyaml==5.3.1
 gitpython
 heroku3
