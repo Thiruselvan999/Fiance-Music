@@ -435,6 +435,13 @@ All commands can be used with: /
             ),
             disable_web_page_preview=True,
         )
+if (
+        not config.SPOTIFY_CLIENT_ID
+        and not config.SPOTIFY_CLIENT_SECRET
+    ):
+        LOGGER("YukkiMusic").warning(
+            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
+        )
 
     elif create_match:
         text, keyboard = await sos_parser(query)
