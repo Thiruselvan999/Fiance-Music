@@ -5,6 +5,7 @@ import re
 from Yukki.Core.Clients.cli import LOG_CLIENT
 
 from config import LOG_GROUP_ID
+from pytgcalls import idle
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from rich.console import Console
